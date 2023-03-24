@@ -46,14 +46,19 @@ mkdir -p /usr/local/lib/systemd/system
 mv containerd.service /usr/local/lib/systemd/system/containerd.service
 systemctl daemon-reload
 systemctl enable --now containerd
-```
+
 #### Check if containerd running
 $ systemctl status containerd
+```
+
 
 #### Install Runc
 ```
 wget https://github.com/opencontainers/runc/releases/download/v1.1.4/runc.amd64
 install -m 755 runc.amd64 /usr/local/sbin/runc
+
+## To check if runc running
+$ runc
 ```
 
 #### Install CNI
