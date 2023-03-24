@@ -119,7 +119,7 @@ EOF
 apt update -y
 apt install -y kubelet kubeadm kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
-sudo apt-mark hold kubelet kubeadm kubectl
+
 ```
 
 ## Run on Master Node and follow the instructions
