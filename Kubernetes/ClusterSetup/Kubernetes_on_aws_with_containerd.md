@@ -47,6 +47,8 @@ mv containerd.service /usr/local/lib/systemd/system/containerd.service
 systemctl daemon-reload
 systemctl enable --now containerd
 ```
+#### Check if containerd running
+$ systemctl ststus containerd
 
 #### Install Runc
 ```
