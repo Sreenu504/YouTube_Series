@@ -68,7 +68,7 @@ mkdir -p /opt/cni/bin
 tar Cxzvf /opt/cni/bin cni-plugins-linux-amd64-v1.2.0.tgz
 ```
 
-#### Install CRICTL
+#### Install CRICTL   --> Note : Now docker keyword has to be replaced with crictl i.e, crictl build ..... like that
 ```
 VERSION="v1.26.0" # check latest version in /releases page
 wget https://github.com/kubernetes-sigs/cri-tools/releases/download/$VERSION/crictl-$VERSION-linux-amd64.tar.gz
