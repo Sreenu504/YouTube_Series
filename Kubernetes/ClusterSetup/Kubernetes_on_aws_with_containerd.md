@@ -23,11 +23,12 @@
 	10248-10260 for Kubelet API etc
 	30000-32767 for NodePort Services
 	```
-	
-	**## Change Host names to identify which is master & worker using below command**
+---
+**## Change Host names to identify which is master & worker using below command**
 ---
 $ hostnamectl set-hostname Master
----
+
+
 ## Run on all nodes of the cluster as root user
 #### Disable SWAP
 You MUST disable swap in order for the kubelet to work properly 
