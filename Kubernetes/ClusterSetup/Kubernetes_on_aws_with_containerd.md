@@ -126,20 +126,25 @@ sudo apt-mark hold kubelet kubeadm kubectl
 
 ```
 
-## Run on Master Node and follow the instructions
+---
+## Common for ALL NODES - MASTER + WORKER
+---
+---
+## Uncommon
+---
+
+## Run on Master Node Only and follow the instructions
 
 ```
 kubeadm config images pull
 kubeadm init
+kubeadm init --help
 ```
 #### Install any CNI plugin. We will use weavenet
 ```
 kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
 ```
 
----
-## Common for ALL NODES - MASTER + WORKER
----
 
 ## Run on Slave Nodes 
 Run the join command obtained from kubeadm init output on all Workers nodes. Example
