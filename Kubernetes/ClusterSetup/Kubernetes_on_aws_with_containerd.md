@@ -82,6 +82,9 @@ timeout: 2
 debug: false
 pull-image-on-create: false
 EOF
+
+## check if running
+$ crictl ps              --> like $ docker ps
 ```
 #### Forwarding IPv4 and letting iptables see bridged traffic
 https://kubernetes.io/docs/setup/production-environment/container-runtimes/#forwarding-ipv4-and-letting-iptables-see-bridged-traffic
