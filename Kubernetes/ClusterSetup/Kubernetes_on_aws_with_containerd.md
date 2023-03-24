@@ -28,6 +28,10 @@
 ---
 $ hostnamectl set-hostname Master
 
+---
+## Common for ALL NODES - MASTER + WORKER
+---
+
 
 ## Run on all nodes of the cluster as root user
 #### Disable SWAP
@@ -132,6 +136,10 @@ kubeadm init
 ```
 kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
 ```
+
+---
+## Common for ALL NODES - MASTER + WORKER
+---
 
 ## Run on Slave Nodes 
 Run the join command obtained from kubeadm init output on all Workers nodes. Example
