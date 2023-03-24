@@ -48,7 +48,7 @@ systemctl daemon-reload
 systemctl enable --now containerd
 ```
 #### Check if containerd running
-$ systemctl ststus containerd
+$ systemctl status containerd
 
 #### Install Runc
 ```
