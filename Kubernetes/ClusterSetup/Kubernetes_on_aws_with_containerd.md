@@ -139,6 +139,13 @@ sudo apt-mark hold kubelet kubeadm kubectl
 kubeadm config images pull
 kubeadm init
 kubeadm init --help
+-- if root user
+export KUBECONFIG=/etc/kubernetes/admin.conf   
+-- if regular user
+ mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
 ```
 #### Install any CNI plugin. We will use weavenet
 ```
